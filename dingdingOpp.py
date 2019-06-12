@@ -78,10 +78,10 @@ class DingdingReporter():
         121生产服务器的地址和
         """
         conn_str = "".join(['DRIVER={SQL Server Native Client 10.0};',
-                    "SERVER=10.10.1.121;",
-                    "DATABASE=enjoy_hq;",
-                    "UID=mis_user;",
-                    "PWD=mis_user"])
+                    "SERVER=xx.xx.xxx.xxx;",
+                    "DATABASE=xxxx;",
+                    "UID=xxxx;",
+                    "PWD=xxxxr"])
         conn = pyodbc.connect(conn_str)#直接在数据库服务器上形成键值
         sql_str = sql_sentence
         return pd.read_sql(sql_str,conn)
