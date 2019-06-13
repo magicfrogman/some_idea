@@ -109,7 +109,7 @@ class Baidumap:
          批量进行坐标转换,一组10个经纬度为宜，中间需要sleep 0.5秒
          type = 3写定转换百度坐标
         """
-        tencent_token = 'NRXBZ-KNMWG-AGSQ4-IZZDD-M2DDT-PHBN2'
+        tencent_token = 'xxx-xxx-xxx'#your tencent token
         num = math.ceil(len(df_coordinate)/10)#向上取整
         total = []
         for i in range(num):
