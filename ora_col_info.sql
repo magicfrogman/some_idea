@@ -76,7 +76,7 @@ from all_tab_columns t2
                           and a.R_OWNER = c.OWNER
 
                       where (a.CONSTRAINT_TYPE = 'R' or a.CONSTRAINT_TYPE = 'P')
-                          and a.OWNER = 'HENAN' --这里修改owner
+                          and a.OWNER = 'SYS' --这里修改owner
                   )
              where c_rank = 1) a
              left outer join
@@ -110,11 +110,11 @@ from all_tab_columns t2
                           and a.R_OWNER = c.OWNER
 
                       where (a.CONSTRAINT_TYPE = 'R' or a.CONSTRAINT_TYPE = 'P')
-                          and a.OWNER = 'HENAN' --这里修改owner
+                          and a.OWNER = 'SYS' --这里修改owner
                   )
              where c_rank = 2) b
          on a.OWNER = b.OWNER and a.TABLE_NAME = b.TABLE_NAME and a.COLUMN_NAME = b.COLUMN_NAME
 ) t4
                    on t2.table_name = t4.table_name and t2.OWNER = t4.OWNER and t2.COLUMN_NAME = t4.COLUMN_NAME
-where t2.owner = 'HENAN' --这里修改owner
+where t2.owner = 'SYS' --这里修改owner
 
