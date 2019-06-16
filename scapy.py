@@ -29,6 +29,7 @@ def sniff_prn(package):
 t = AsyncSniffer(filter="tcp and ( port 80 or port 110 )",
         #过滤条件，可以写成函数过滤，也可以bpf语法
             prn=sniff_prn,#回调函数
+            session=IPSession,
           )
 t.start()
 time.sleep(5) # 5秒内走过的流量
