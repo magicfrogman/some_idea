@@ -9,3 +9,4 @@
 |**`apriori.py`**               |一个关联算法的实现包，生产测试中表现不错|
 |**`oracleinfo.py`**            |oracle库的链接优化，包括对pandas.to_sql的优化封装|
 |**`scapy.py`**                 |scapy包的使用办法，包括同步抓取解析流量和异步|
+|**`computer_info.bat`**        |windows下采集电脑信息的一个工具|
