@@ -11,3 +11,4 @@
 |**`scapy.py`**                 |scapy包的使用办法，包括同步抓取解析流量和异步|
 |**`computer_info.bat`**        |windows下采集电脑信息的一个工具|
 |**`col_comment.sql`**          |sql_server下查询字段信息的一个存储过程，支持多参数模糊查询|
+|**`AutoVivification.py`**      |改写字典类，使得字典支持简单化的深度迭代|
